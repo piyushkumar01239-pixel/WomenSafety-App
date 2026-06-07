@@ -28,7 +28,7 @@ A native Android app that protects women in emergencies. One tap or shake the ph
 ## Installation
 1. Clone the repository
 ```bash
-   git clone https://github.com/piyushkumar01239-pixel/WomenSafetyApp.git
+   git clone https://github.com/piyushkumar01239-pixel/WomenSafety-App.git
 ```
 2. Open in Android Studio
 3. Sync Gradle files
