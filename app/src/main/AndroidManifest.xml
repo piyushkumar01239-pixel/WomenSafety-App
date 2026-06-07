@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.safety.womensafety">
+
+    <!-- ===== PERMISSIONS ===== -->
+
+    <!-- SMS - Send emergency alerts -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Location - GPS tracking -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Audio Recording - 30-second SOS recording -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Internet - Email notifications & Nearby Hospitals API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Storage - Save audio recordings -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- Sensor - Shake detection -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+
+    <!-- Vibration - Alert feedback -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WomenSafetyApp"
+        android:usesCleartextTraffic="true">
+
+        <!-- Splash Screen (launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.WomenSafetyApp.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Main App Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EmergencyContactsActivity"
+            android:exported="false" />
+
+        <!-- New Phase Activities -->
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AlertHistoryActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <!-- Header -->
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#e74c3c" android:padding="15dp">
+            <TextView android:id="@+id/tvWelcome" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Hello! 👋" android:textColor="#FFFFFF" android:textSize="18sp"
+                android:textStyle="bold" android:layout_centerVertical="true"/>
+            <Button android:id="@+id/btnProfile" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="👤 Profile" android:textColor="#FFFFFF" android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Location Status -->
+        <TextView android:id="@+id/tvLocationStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="📍 Getting your location..." android:textSize="12sp" android:textColor="#666666"
+            android:padding="10dp" android:background="#FFEEEE" android:layout_marginTop="4dp"/>
+
+        <!-- Mandatory Emergency Numbers Banner -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#FFE8E8"
+            android:padding="10dp" android:layout_marginTop="4dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🚨 Auto-alerted on SOS:" android:textSize="12sp"
+                android:textColor="#C0392B" android:textStyle="bold"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="6dp">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical"
+                    android:background="#E74C3C" android:padding="8dp" android:gravity="center"
+                    android:layout_marginEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="112" android:textSize="20sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Emergency" android:textSize="10sp" android:textColor="#FFCCCC"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical"
+                    android:background="#2980B9" android:padding="8dp" android:gravity="center"
+                    android:layout_marginEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="100" android:textSize="20sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Police" android:textSize="10sp" android:textColor="#CCE5FF"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical"
+                    android:background="#27AE60" android:padding="8dp" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="108" android:textSize="20sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Ambulance" android:textSize="10sp" android:textColor="#CCFFE0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Countdown -->
+        <TextView android:id="@+id/tvCountdown" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="" android:textSize="14sp" android:textColor="#e74c3c" android:textStyle="bold"
+            android:gravity="center" android:padding="10dp" android:background="#FFE0E0"
+            android:layout_marginTop="4dp" android:visibility="gone"/>
+
+        <!-- SOS BUTTON -->
+        <Button android:id="@+id/btnSOS" android:layout_width="200dp" android:layout_height="200dp"
+            android:text="🆘\nSOS" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:backgroundTint="#e74c3c"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" android:elevation="8dp"/>
+
+        <!-- I'm Safe -->
+        <Button android:id="@+id/btnImSafe" android:layout_width="match_parent" android:layout_height="55dp"
+            android:text="✅ I'm Safe — Cancel SOS" android:textSize="16sp" android:textColor="#FFFFFF"
+            android:backgroundTint="#27ae60" android:layout_marginBottom="8dp" android:visibility="gone"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#DDDDDD" android:layout_marginVertical="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Quick Actions" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="#333333" android:layout_marginBottom="10dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnEmergencyContacts" android:layout_width="0dp" android:layout_height="55dp"
+                android:layout_weight="1" android:text="📞 Contacts" android:textSize="14sp"
+                android:backgroundTint="#3498db" android:textColor="#FFFFFF" android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnAlertHistory" android:layout_width="0dp" android:layout_height="55dp"
+                android:layout_weight="1" android:text="🕐 History" android:textSize="14sp"
+                android:backgroundTint="#9b59b6" android:textColor="#FFFFFF" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnNearbyHospitals" android:layout_width="match_parent" android:layout_height="55dp"
+            android:text="🏥 Nearby Hospitals" android:textSize="14sp"
+            android:backgroundTint="#16a085" android:textColor="#FFFFFF" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="💡 Shake phone 3 times to trigger SOS automatically!"
+            android:textSize="12sp" android:textColor="#888888" android:padding="10dp"
+            android:background="#F0F0F0" android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 My Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#e74c3c"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user@email.com"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Name -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Full Name *" android:textColor="#333333" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Phone -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Phone Number *" android:textColor="#333333" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etProfilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Blood Group -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🩸 Blood Group" android:textColor="#333333" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g., O+, A-, B+"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Medical Information -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="💊 Medical Information" android:textColor="#333333" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etMedicalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies, conditions, medications..."
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Home Address -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🏠 Home Address" android:textColor="#333333" android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your home address"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="💾 Save Profile"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#e74c3c"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnProfileBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="← Back"
+            android:textSize="14sp"
+            android:textColor="#e74c3c"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+</ScrollView>

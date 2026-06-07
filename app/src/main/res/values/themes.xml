@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WomenSafetyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.WomenSafetyApp" parent="Base.Theme.WomenSafetyApp" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.WomenSafetyApp.Splash" parent="Theme.WomenSafetyApp">
+        <item name="android:windowBackground">#e74c3c</item>
+        <item name="android:statusBarColor">#e74c3c</item>
+    </style>
+
+</resources>

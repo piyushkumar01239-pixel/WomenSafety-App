@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WomenSafetyApp</string>
+    <string name="welcome_text">Welcome to SafeGuard!</string>
+    <string name="sos_button">SOS</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Login to your account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="new_user_signup">New User? Sign Up</string>
+</resources>

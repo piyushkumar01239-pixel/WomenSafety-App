@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/alertTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 29, 2026 - 02:30 PM"
+        android:textSize="16sp"
+        android:textColor="#E74C3C"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/alertLocationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: 30.9010, 75.8573"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/alertStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Alert Sent"
+        android:textSize="12sp"
+        android:textColor="#27AE60"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/markSafeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as Safe"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#27AE60"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
